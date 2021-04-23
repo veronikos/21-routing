@@ -5,8 +5,7 @@ import Photos from "../pages/photos";
 
 export const appRoutes = [
     {
-        path: '/',
-        exact: true,
+        path: '/21-routing',
         component: Home
     },
     {

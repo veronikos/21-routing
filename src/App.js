@@ -11,7 +11,7 @@ import NoPathFound from "./pages/404";
 
 const links = [
   {
-    to: "/",
+    to: "/21-routing",
     label: "Home",
   },
   {
