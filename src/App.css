@@ -27,6 +27,15 @@ h1 {
   margin-top: 20px;
 }
 
+.homeImage {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.restricted {
+  width: 500px;
+}
+
 .header {
   min-height: 6vh;
   display: flex;
@@ -50,4 +59,32 @@ h1 {
 
 .App-link {
   color: #61dafb;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photos li {
+  height: 40vh;
+  flex-grow: 1;
+  list-style-type: none;
+}
+
+.photos li:last-child {
+  flex-grow: 10;
+}
+
+.photos img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  photos li {
+    height: 30vh;
+  }
 }

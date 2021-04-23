@@ -7,6 +7,7 @@ import {
 import { Navigation } from "./components/navigation";
 import "./App.css";
 import { appRoutes } from "./routes/index";
+import NoPathFound from "./pages/404";
 
 const links = [
   {
@@ -14,12 +15,12 @@ const links = [
     label: "Home",
   },
   {
-    to: "/about",
-    label: "About",
+    to: "/photos",
+    label: "Photos",
   },
   {
-    to: "/users",
-    label: "Users",
+    to: "/media",
+    label: "Media",
   },
   {
     to: "/contacts",
@@ -34,15 +35,12 @@ export default function App() {
         <header className="header">
           <Navigation links={links}></Navigation>
         </header>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
         {appRoutes.map((route) => (
               <Route key={route.path} {...route} />
             ))}
             <Route path="*">
-              <p>No Path Found</p>
+              <NoPathFound></NoPathFound>
             </Route>
         </Switch>
       </div>

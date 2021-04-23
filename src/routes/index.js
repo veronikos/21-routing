@@ -1,7 +1,7 @@
 import Home from "../pages/home";
-import Users from "../pages/users";
-import About from "../pages/about";
+import Media from "../pages/media";
 import Contacts from "../pages/contacts";
+import Photos from "../pages/photos";
 
 export const appRoutes = [
     {
@@ -10,12 +10,12 @@ export const appRoutes = [
         component: Home
     },
     {
-        path: '/about',
-        component: About
+        path: '/photos',
+        component: Photos
     },
     {
-        path: '/users',
-        component: Users
+        path: '/media',
+        component: Media
     },
     {
         path: '/contacts',
