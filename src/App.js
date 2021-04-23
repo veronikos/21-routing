@@ -21,6 +21,10 @@ const links = [
     to: "/users",
     label: "Users",
   },
+  {
+    to: "/contacts",
+    label: "Contacts",
+  },
 ]
 
 export default function App() {
